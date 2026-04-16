@@ -58,6 +58,19 @@ a { color: inherit; }
   padding: 24px 0 96px;
 }
 
+/* ── Hero spotlight ────────────────────────────────── */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -60px; left: -80px;
+  width: 680px; height: 520px;
+  background: radial-gradient(ellipse at 30% 40%, rgba(126,240,200,0.09) 0%, transparent 65%);
+  pointer-events: none;
+  z-index: 0;
+}
+.hero { position: relative; isolation: isolate; }
+.hero > * { position: relative; }
+
 /* ── Header ────────────────────────────────────────── */
 .site-header {
   position: sticky; top: 12px; z-index: 20;
@@ -97,10 +110,10 @@ a { color: inherit; }
 .hero, .section {
   margin-bottom: 16px;
   padding: clamp(28px, 4vw, 48px);
-  border: 1px solid var(--line);
+  border: 1px solid rgba(165, 196, 224, 0.22);
   border-radius: var(--radius-xl);
-  background: linear-gradient(160deg, rgba(11,22,36,0.92), rgba(7,14,24,0.80));
-  box-shadow: var(--shadow);
+  background: linear-gradient(160deg, rgba(11,22,36,0.94), rgba(7,14,24,0.86));
+  box-shadow: var(--shadow), inset 0 1px 0 rgba(255,255,255,0.04);
 }
 
 /* ── Hero ──────────────────────────────────────────── */
@@ -160,8 +173,9 @@ a { color: inherit; }
   background: var(--card);
 }
 .signal-card-accent {
-  background: linear-gradient(150deg, rgba(126,240,200,0.12), rgba(14,26,42,0.92));
-  border-color: var(--accent-line);
+  background: linear-gradient(150deg, rgba(126,240,200,0.15), rgba(14,26,42,0.96));
+  border-color: rgba(126,240,200,0.42);
+  box-shadow: 0 0 24px rgba(126,240,200,0.07);
 }
 .proof-card span { color: var(--accent); font-size: 0.85rem; font-family: var(--font-mono); }
 .signal-card h2 { margin: 0; font-size: 1.15rem; font-weight: 700; }
@@ -212,8 +226,9 @@ a { color: inherit; }
 .desire-card {
   padding: 28px 24px;
   border-radius: var(--radius-lg);
-  border: 1px solid var(--line);
-  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(165, 196, 224, 0.2);
+  background: rgba(255,255,255,0.025);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.04);
 }
 .desire-card h3 { margin: 0 0 12px; font-size: 1.2rem; font-weight: 700; color: var(--text); }
 .desire-card p { margin: 0; color: var(--muted); line-height: 1.7; font-size: 0.97rem; }
@@ -239,8 +254,9 @@ a { color: inherit; }
   border: 1px solid var(--line); background: var(--card);
 }
 .mode-card-primary {
-  background: linear-gradient(150deg, rgba(126,240,200,0.10), rgba(14,26,42,0.94));
-  border-color: var(--accent-line);
+  background: linear-gradient(150deg, rgba(126,240,200,0.13), rgba(14,26,42,0.96));
+  border-color: rgba(126,240,200,0.38);
+  box-shadow: 0 0 32px rgba(126,240,200,0.08);
 }
 .mode-card h3 { margin: 0 0 12px; font-size: 1.35rem; font-weight: 700; }
 .mode-card p { margin: 0 0 16px; color: var(--muted); line-height: 1.7; font-size: 0.97rem; }
@@ -320,8 +336,9 @@ a { color: inherit; }
   border: 1px solid var(--line); background: var(--card);
 }
 .availability-card-primary {
-  background: linear-gradient(160deg, rgba(126,240,200,0.11), rgba(14,28,46,0.94));
-  border-color: var(--accent-line);
+  background: linear-gradient(160deg, rgba(126,240,200,0.14), rgba(14,28,46,0.96));
+  border-color: rgba(126,240,200,0.38);
+  box-shadow: 0 0 36px rgba(126,240,200,0.09);
 }
 .availability-card h3 { margin: 0 0 12px; font-size: 1.35rem; font-weight: 700; }
 .availability-card p { margin: 0 0 12px; color: var(--muted); line-height: 1.7; font-size: 0.97rem; }
@@ -332,8 +349,9 @@ a { color: inherit; }
 .final-cta-section {
   display: grid; grid-template-columns: 1fr 1fr; gap: 28px;
   align-items: center;
-  background: linear-gradient(135deg, rgba(126,240,200,0.08) 0%, rgba(10,20,36,0.96) 60%);
-  border-color: var(--accent-line);
+  background: linear-gradient(135deg, rgba(126,240,200,0.1) 0%, rgba(10,20,36,0.97) 60%);
+  border-color: rgba(126,240,200,0.32);
+  box-shadow: var(--shadow), 0 0 60px rgba(126,240,200,0.07);
 }
 .final-cta-copy h2 {
   margin: 0 0 14px; font-size: clamp(1.9rem, 3.8vw, 3rem);
