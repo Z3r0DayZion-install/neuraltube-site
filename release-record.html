@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NeuralTube | Frozen Release Record</title>
+  <meta name="description" content="Public release record for NeuralTube's frozen approved baseline, including the canonical commit, tag, and proof-backed release facts.">
+  <meta name="theme-color" content="#08131f">
+  <meta property="og:title" content="NeuralTube | Frozen Release Record">
+  <meta property="og:description" content="Canonical public release record for the frozen NeuralTube baseline.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://z3r0dayzion-install.github.io/neuraltube-site/release-record.html">
+  <link rel="canonical" href="https://z3r0dayzion-install.github.io/neuraltube-site/release-record.html">
+  <link rel="icon" href="assets/neuraltube.ico" sizes="any">
+  <link rel="stylesheet" href="styles/landing.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="brand-lockup">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <div>
+          <p class="eyebrow">NeuralTube</p>
+          <p class="brand-subline">Frozen release record</p>
+        </div>
+      </div>
+      <nav class="site-nav" aria-label="Secondary">
+        <a href="index.html">Home</a>
+        <a href="#artifact">Artifact</a>
+        <a href="#proof">Proof</a>
+        <a href="#scope">Scope</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="section reveal is-visible">
+        <p class="eyebrow">Canonical record</p>
+        <h1>Frozen baseline, separated from later documentation work.</h1>
+        <p class="hero-text">This page exists so the public landing site can point to a stable release record without redefining the frozen artifact or depending on private repository navigation.</p>
+      </section>
+
+      <section id="artifact" class="section reveal is-visible">
+        <div class="section-heading">
+          <p class="eyebrow">Artifact</p>
+          <h2>The approved release artifact is exact.</h2>
+        </div>
+        <div class="three-up">
+          <article class="info-card">
+            <h3>Canonical commit</h3>
+            <p><code>82585128</code></p>
+            <p>This is the last proven release baseline and remains the protected release artifact.</p>
+          </article>
+          <article class="info-card" id="tag">
+            <h3>Published tag</h3>
+            <p><code>neuraltube-proof-go-2026-04-15</code></p>
+            <p>The public release tag pins the approved clean proof baseline.</p>
+          </article>
+          <article class="info-card">
+            <h3>Later docs work</h3>
+            <p><code>0b3b842e</code> and later docs commits are informative, not release-defining.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="proof" class="section reveal is-visible">
+        <div class="section-heading narrow">
+          <p class="eyebrow">Proof</p>
+          <h2>What was actually proven on the frozen baseline.</h2>
+        </div>
+        <div class="proof-layout">
+          <article class="proof-panel">
+            <ul class="proof-list">
+              <li>Release-proof GO was established on a clean baseline.</li>
+              <li>Frontend build passed on the approved lineage.</li>
+              <li>Electron Windows packaging passed on the approved lineage.</li>
+              <li>Institutional proof hash matched the approved expected baseline on commit <code>82585128</code>.</li>
+              <li>The current proven path is Windows desktop oriented.</li>
+            </ul>
+          </article>
+          <article class="proof-terminal">
+            <p class="terminal-title">proof snapshot</p>
+            <pre><code>tag            neuraltube-proof-go-2026-04-15
+commit         82585128
+frontend       PASS
+electron win   PASS
+proof hash     VERIFIED</code></pre>
+          </article>
+        </div>
+      </section>
+
+      <section id="scope" class="section reveal is-visible">
+        <div class="section-heading narrow">
+          <p class="eyebrow">Scope boundary</p>
+          <h2>What this public record does not do.</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3>No release redefinition</h3>
+            <p>This page does not reopen proof, re-anchor hashes, or redefine later branch tips as release artifacts.</p>
+          </article>
+          <article class="feature-card">
+            <h3>No unsupported claims</h3>
+            <p>This page does not imply macOS support, Linux support, public customer adoption, or other claims that are not grounded in the repository truth.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
