@@ -524,3 +524,11 @@ a {
     transform: none;
   }
 }
+
+.cta-caveat {
+  font-size: 0.76rem;
+  color: #4a7a8a;
+  font-family: var(--font-mono, 'IBM Plex Mono', monospace);
+  letter-spacing: 0.02em;
+  margin-top: 6px;
+}
